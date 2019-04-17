@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+
+header {
+    background: #202070;
+    padding: 50px;
+    color: #fff;
+    text-align: center;padding: 50px;
+}
+
+a {
+
+    font-size: 50px;
+    color: #fff;
+    margin: 0 30px;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.link-active {
+    text-decoration: underline;
+}
+
+#alert {
+    color: red;
+}
+
+.nav>.link-active {
+    font-size: 80px;
+}
+
+a[href="https://facebook.com"] {
+    text-shadow: 1px 1px 5px #fff;
+}
+
+.square {
+    width: 300px;
+    height: 300px;
+    background: purple;
+    margin: 50px auto 0;
+    color: #fff;
+    border: 2px solid #000000;
+    padding: 35px 20px 35px 20px; /* верх, право, низ, лево*/
+    box-sizing: border-box;
+
+}
+
+.item {
+    display: inline-block;
+    font-size: 20px;
+    vertical-align: top; /*выравнивает блоки под одну линию*/
+}
+
+.list {
+    font-size: 0; /*убирает промежуток между двумя блоками*/
+}
+
+.square-big {
+    height: auto; /*растягивает блок по контенту*/
+}
