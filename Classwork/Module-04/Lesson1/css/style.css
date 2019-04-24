@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+.wrapper {
+    /* background: linear-gradient(to right, blue, green, red); */
+    background: radial-gradient(circle at center, #1488CC, #b31217);
+    min-height: 100vh;;
+    padding: 30px 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.title {
+    color: #eaeaea;
+    text-transform: uppercase;
+    margin: 0.8em 0; /*добавляет марджин в процентном соотношении (размер шрифта умножает на значение ЕМ)*/
+}
+
+/* .title::before {
+    content: '\2603';
+    font-size: 60px;
+} */
+
+.title::after {
+    content: '\2603';
+}
+
+.title::first-letter { /*меняет цвет и размер первой буквы*/
+    font-size: 50px;
+    color: aqua;
+}
+
+.text::first-line {
+    color: black; /*меняет цвет первой линии*/
+}
+.text::selection {
+    background: yellow; /*меняется цвет при выделении текста*/
+}
+
+.text {
+    font-size: 20px;
+    color: hsl(28, 10%, 87%);
+    background: rgba(43, 158, 43, 0.4);
+    padding: 50px;
+    font-size: 30px;
+    text-align: justify;
+}
+
+.krasiviu {
+    float: right;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.list {
+    padding: 40px;
+    background: indianred;
+}
+
+.item {
+    width: 33.3333%;
+    border: 1px solid green;
+    background: #000;
+    height: 250px;
+    float: left;
+}
+
+.clearfix::after { /*Отменяет обтекания после себя*/
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+.box {
+    width: 1000px;
+    margin: 0 auto; /*ставит блок по центру*/
+}
+
+.box-item {
+    background: rgb(12, 11, 99);
+}
+
+.box-list-item {
+    width: 25%;
+    border: 1px solid rgb(126, 30, 1);
+    height: auto;
+    text-align: center;
+    float: left;
+    list-style: none;
+    background: #333333;
+    padding: 30px;
+    text-align: justify;
+}
+
+.foto {
+    height: 160px;
+}
+
+.clearfix::after { /*Отменяет обтекания после себя*/
+    content: '';
+    display: table;
+    clear: both;
+}
