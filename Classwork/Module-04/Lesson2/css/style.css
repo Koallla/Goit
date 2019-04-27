@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    min-height: 100vh;
+    background: purple;
+    color: white;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 50px;
+    text-align: center;
+}
+
+.form {
+    max-width: 500px;
+    margin: 80px auto;
+    border: 1px solid #000;
+    padding: 50px;
+}
+
+.input {
+width: 100%;
+display: inline-block;
+background: none;
+border: 1px solid transparent;
+border-bottom: 1px solid #000;
+outline: none; /*Убирает белый фон при выделении input*/
+}
+
+.input::placeholder {
+    color: black;
+}
+
+.input:focus {
+    border: 1px solid #000;/*добавляем фокус инпуту*/ 
+}
+/*Кнопка*/
+.submit {
+    padding: 8px 15px;
+    background: #000;
+    color: #fff;
+    border: 1px solid transparent;
+    margin-top: 30px;
+    outline: none;
+}
+
+.submit:hover {
+    background: purple;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.submit:focus {
+    border: 1px solid #fff;
+}
+
+.submit:disabled {
+    background: lightgrey;
+}
+
+:root {
+    font-family: serif;
+}
+
+.list {
+    text-align: center;
+}
+
+
+.item {
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    background: thistle;
+    vertical-align: top;
+    /* filter: blur(4px); прозрачность */
+    filter: grayscale(90%);
+}
+
+.item:first-child {
+    background: turquoise;
+}
+
+/* .item:nth-child(2n) {
+    border: 2px solid #000;
+} */
+
+.item:nth-last-child(-n+2) { /*последние два элемента*/
+    border: 2px solid #000;
+}
+
+.item:empty {
+    width: 300px;
+    height: 300px;
+}
+
+
+/*Расстановка 5-ти блоков по центру с центровкой по краям*/
+.card-list {
+    padding-top: 50px;
+    overflow: hidden;/*типа clearfix*/
+    margin-left: -20px; /*Используем отрицательный марджин для центровки блоков по краям*/
+    margin-right: -20px;/*Используем отрицательный марджин для центровки блоков по краям*/
+ }
+ 
+ .card {
+    width: 20%;
+    padding: 20px;
+    float: left;
+ }
+ 
+ .card-inner {
+    height: 200px;
+    background: red;
+ }
