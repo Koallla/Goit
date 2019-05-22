@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    min-height: 100vh;
+    padding: 0 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 960px;
+    background: lightblue;
+     /*поставил два ряда друг к другу*/
+    align-content: space-between;
+    /* align-items: flex-start; */
+}
+
+.flex-item {
+    /* width: 25%; */
+    /* min-width чтобы не сжимались */
+    flex: 1 1 33.333%; /*сделали нижний ряд на ширину родителя*/
+    padding: 0 20px 0 20px;
+
+}
+
+.flex-item-inner {
+    background: purple;
+    color: #fff;
+    font-size: 50px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-item-inner-big {
+    height: 300px;
+    width: 960px;
+
+
+}
+
+

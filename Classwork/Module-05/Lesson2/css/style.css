@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    position: relative;
+    width: 800px;
+    height: 90vh;
+    margin: 0 auto;
+    background: grey;
+}
+
+
+.house {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    bottom: 0;
+    left: 100px;
+    background: green;
+}
+
+
+.house::before {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    border: 100px solid transparent;
+    border-bottom-color: black;
+}
+
+.house::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+	height: 50px;
+	background: white;
+	-moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	border-radius: 50px;
+}
+
+.fence {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: rgb(59, 3, 3) ;
+    bottom: 0;
+    left: 350px;
+}
+
+.box {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: white;
+
+}
+
+.fence1 {
+    top: 0;
+    left: 20px;
+}
+
+.fence2 {
+    top: 0;
+    left: 60px;
+}
+
+.fence3 {
+    top: 40px;
+    left: 20px;
+}
+
+.fence4 {
+    top: 40px;
+    left: 60px;
+}
+
+.fence5 {
+    top: 80px;
+    left: 20px;
+}
+
+.fence6 {
+    top: 80px;
+    left: 60px;
+}
+
+.sun {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    top: 0px;
+    left: 500px;
+}
+
+
+.sun-circle {
+    position: absolute;
+    width: 70px;
+	height: 70px;
+	background: yellow;
+	-moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    top: 70px;
+    left: 70px;
+    transform: translate(-50%, -50%);
+	border-radius: 50px;
+}
+
+.rays {
+    opacity: 0;
+}
+
+.sun-circle:hover~.rays {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.ray1 {
+    position: absolute;
+    width: 50px;
+    height: 10px;
+    background: yellow;
+    transform: rotate(30deg);
+    top: 30px;
+    left: -20px;
+}
+
+.ray2 {
+    position: absolute;
+    width: 50px;
+    height: 10px;
+    background: yellow;
+    top: 70px;
+    left: -30px;
+
+}
+
+.ray3 {
+    position: absolute;
+    width: 50px;
+    height: 10px;
+    background: yellow;
+    transform: rotate(-30deg);
+    top: 110px;
+    left: -20px;
+}
+
+.star {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    left: 600px;
+    bottom: 100px;
+}
+.star1 {
+    position: absolute;
+    border: 100px solid transparent;
+    border-top-width: 100px;
+    border-right-width: 80px;
+    border-left-width: 80px;
+    border-bottom-color: black;
+}
+
+.star2 {
+    position: absolute;
+    border: 100px solid transparent;
+    border-top-width: 100px;
+    border-right-width: 80px;
+    border-left-width: 80px;
+    border-top-color: black;
+    transform: translateY(68%);
+}
