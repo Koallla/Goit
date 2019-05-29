@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Unisans';
+    src: url(../fonts/UniSans-Book.woff) format('woff'), 
+         url(../fonts/UniSans-Book.woff2) format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Unisans';
+    src: url(../fonts/UniSans-light.woff) format('woff'),
+         url(../fonts/UniSans-light.woff2) format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
