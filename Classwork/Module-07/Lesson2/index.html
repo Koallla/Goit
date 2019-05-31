@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="container">
+
+            <form action="#" class="form">
+
+                <label class="label" for="name">Name</label><!--Для привязки name к input, при клике на name курсор перейдет на input-->
+                <input required class="input" type="text" id="name" name="name" placeholder="Name">
+                
+                <label>
+                    Second name
+                    <input required class="input" type="text" name="second_name" placeholder="Second name"> 
+                </label>
+                <div class="color-picker">
+                <label>
+                        Password
+                        <input required class="input" type="password" name="password" placeholder="password"> 
+                    </label>
+
+                <label>
+                    green
+                    <input type="checkbox" name="colors" value="green">
+                </label>
+                <label>
+                    yellow
+                    <input type="checkbox" name="colors">
+                </label>
+                <label>
+                    red
+                    <input type="checkbox" name="colors">
+                </label>
+                <input type="hidden" name="" id="">
+                <select class="select" name="car_type">
+
+                    <option disabled selected value="">car_type</option>
+                    <option value="sedan">sedan</option>
+                    <option value="hatch">hatch</option>
+                    <option value="jiguli">batmobil</option>
+                </select>
+
+                    <textarea name="message" id="" cols="30" rows="10" class="textarea input" placeholder="Message"></textarea>
+                
+
+            </div>
+
+                <!-- <input type="submit" value="submit"> -->
+                <button class="btn btn-success" type="submit">Submit</button>
+                <button class="btn btn-alert" type="reset">Reset</button>
+           
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

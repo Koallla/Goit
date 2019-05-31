@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    min-height: 100vh;
+
+}
+
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+.form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px 40px;
+    background: purple;
+    color: yellow;
+    font-size: 24px;
+}
+
+.input {
+    display: block;
+    margin-bottom: 25px;
+    margin-top: 15px;
+    font-size: inherit;
+    font-family: inherit;
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid yellow;
+    color: inherit;
+}
+
+.input::placeholder {
+    color: gray;
+    font-size: 20px;
+}
+
+.btn {
+    border: none;
+    padding: 8px 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+    display: inline-block;
+    cursor: pointer;    
+}
+
+.btn-success {
+    background: green;
+}
+
+.btn-alert {
+    background: red;
+}
+
+.color-picker {
+    margin-bottom: 30px;
+}
+
+.textarea {
+    border: 1px solid rgb(217, 255, 1);
+    height: 150px;
+}
+
+.select {
+    width: 100px;
+    display: block;
+    background: none;
+    padding: 8px 0;
+    border: 1px solid yellow;
+    color: inherit;
+    margin: 20px 0;
+}
+
+textarea {
+    resize: none;
+}
+
+
+option {
+    color: rebeccapurple;
+}
+
+
+option::disabled {
+    background: red;
+}
+
