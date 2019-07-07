@@ -1,0 +1,21 @@
+.header { 
+    background: rgb(0, 0, 0);
+    padding: 15px 0;
+
+    @include mq(800px) {
+        background: $primary-color;
+    }
+    
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__link {
+        text-decoration: none;
+        margin: 0 15px;
+        color: #fff;
+        @include lh(25,40);
+    }
+}

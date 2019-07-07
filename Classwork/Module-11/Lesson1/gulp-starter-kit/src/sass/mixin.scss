@@ -1,0 +1,11 @@
+@mixin mq($break-point) {
+    @media (min-width: $break-point) {
+        @content;
+    }
+}
+
+
+@mixin lh($font-size, $line-height) {
+    line-height: $line-height / $font-size;
+    font-size: $font-size + px;
+}
